@@ -170,3 +170,50 @@ curl 192.168.55.157:8877/history/data/subject/595bbd992b8a9b45b9191ca2
 
 ========
 
+# bool 查询
+GET xinhua-2018-5-10,xinhua-2018-5-3,xinhua-2018-5-2,xinhua-2018-4-26/News/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "match_phrase": {
+            "textSrc": "中国联通"
+          }
+        },
+        {
+          "term": {
+            "mediaTname": {
+              "value": "APP"
+            }
+          }
+        },
+        {
+          "range": {
+            "pubDay": {
+              "gte": "2018-01-01",
+              "lte": "2018-03-31"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
+
+# 聚合
+GET xinhua-2018-5-10/News/_search
+{
+    "size": 0, 
+    "aggs" : { 
+        "zewen" : { 
+            "terms" : { 
+              "field" : "mediaTname",
+              "size": 100,
+              "order": {
+                "_term": "desc"
+              }
+            }
+        }
+    }
+}
