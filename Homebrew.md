@@ -1,8 +1,8 @@
 # 学习使用 Homebrew
 
-## Homebrew是什么 ？
-
 > Package Manager for MacOS.
+
+## Homebrew是什么 ？
 
 #### 设计思想
 
