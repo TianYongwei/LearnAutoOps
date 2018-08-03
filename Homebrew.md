@@ -2,7 +2,7 @@
 
 ## 是什么
 
-Package Manager for MacOS.
+> Package Manager for MacOS.
 
 ### 设计思想
 
