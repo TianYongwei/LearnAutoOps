@@ -19,4 +19,12 @@
 
 ## 怎么用（基于场景）
 
+- 搜索关键字相关的可用App
+- 查看已经安装的App列表
+- 安装App
+- 卸载App
+- 显示App依赖
+
 ## 如何贡献（提交） App
+
+[参考：在 Homebrew 上发布自己的 App](https://liam0205.me/2016/07/30/release-your-own-app-in-Homebrew/)
