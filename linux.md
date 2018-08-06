@@ -1,12 +1,12 @@
 # Linux 基础知识
 
-#### nohup使用——输出到指定文件
+### nohup使用——输出到指定文件
 
 ``` shell
 nohup [command line] > nohup.out 2>&1 &
 ```
 
-#### alias别名——将长命令换成短命令使用
+### alias别名——将长命令换成短命令使用
 
 新建alias
 
@@ -28,13 +28,13 @@ unalias [短命令]
 
 **注意**，以上alias设置仅仅会在当前会话生效，比如使用alias设置了别名，重新开启shell会话后就失效了，这个时候的最佳实践是编写~/.bash_alias脚本文件，并让脚本在会话启动的时候执行（添加脚本在.bash_profile中）。
 
-#### 按照名字匹配线程名称并杀死
+### 按照名字匹配线程名称并杀死
 
 ``` shell
 ps -ef|grep [thread_name] | grep -v "grep" | awk '{print $2}' | xargs kill -9
 ```
 
-#### scp 远程拷贝(配合免密登录更方便)
+### scp 远程拷贝(配合免密登录更方便)
 
 ``` shell
 scp local_file [remote_username@]remote_ip:remote_folder[/filename]
@@ -46,7 +46,7 @@ or
 scp -r local_folder [remote_username@]remote_ip:remote_folder
 ```
 
-#### 免密登录
+### 免密登录
 
 本地生成钥匙对
 
@@ -115,7 +115,7 @@ if [ -f ~/.bash_aliases ]; then
 fi
 ```
 
-#### Bash shell 的几个关键字
+### Bash shell 的几个关键字
 
 常用搭配，echo > 往文件中写字符
 
