@@ -32,10 +32,10 @@
 
 ## 自动化运维
 
-- [`Ansible` Ansible 相关]()
-- [`Puppet` Puppet 相关]()
+- [ ] [`Ansible` Ansible 相关]()
+- [ ] [`Puppet` Puppet 相关]()
 
 ## 持续集成相关
 
-- [Jenkins]()
+- [ ] [Jenkins]()
 
