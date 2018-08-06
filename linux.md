@@ -2,27 +2,27 @@
 
 #### nohup使用——输出到指定文件
 
-```
-nohup java -jar xhwNewKafkaZhiLi--version-weibo.jar > nohup.out 2>&1 &
+``` shell
+nohup [command line] > nohup.out 2>&1 &
 ```
 
 #### alias别名——将长命令换成短命令使用
 
 新建alias
 
-```
+``` shell
 alias [短命令]='[长命令]'
 ```
 
 显示当前会话的alias
 
-```
+``` shell
 alias
 ```
 
 删除当前会话的alias
 
-```
+``` shell
 unalias [短命令]
 ```
 
@@ -30,19 +30,19 @@ unalias [短命令]
 
 #### 按照名字匹配线程名称并杀死
 
-```
-ps -ef|grep xhwDataCenter.jar | grep -v "grep" | awk '{print $2}' | xargs kill -9
+``` shell
+ps -ef|grep [thread_name] | grep -v "grep" | awk '{print $2}' | xargs kill -9
 ```
 
 #### scp 远程拷贝(配合免密登录更方便)
 
-```
+``` shell
 scp local_file [remote_username@]remote_ip:remote_folder[/filename]
 ```
 
 or
 
-```
+``` shell
 scp -r local_folder [remote_username@]remote_ip:remote_folder
 ```
 
@@ -64,7 +64,6 @@ ssh-keygen(选项)
 -P：提供（旧）密语；
 -q：静默模式；
 -t：指定要创建的密钥类型。
-
 
 ssh-keygen -t rsa -C "youremail@email.com" -f ~/.ssh/github_key -P ''
 生成新的ssh key并命名为github_key
@@ -96,7 +95,7 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub user@server
 
 以下是我 MacOS 的 ~/.bash_profile 文件
 
-``` bash
+``` shell
 # mysql
 export PATH=/usr/local/mysql/bin:$PATH
 
