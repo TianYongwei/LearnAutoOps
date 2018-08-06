@@ -87,8 +87,6 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub user@server
 
 ### 会话session概念和.bash_xx文件的含义
 
----
-
 新建会话默认执行 ~/.bash_profile，这时候涉及到 Bash 的初始化流程，交互模式和非交互模式下的初始化流程是不一样的，这部分待深究。
 
 > Linux 系统的一种 Shell 程序，其他常见的还有zsh等
