@@ -85,7 +85,7 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub user@server
 
 > 执行需要目标服务器的用户名和密码,因为是首次
 
-#### 会话session概念和.bash_xx文件的含义
+### 会话session概念和.bash_xx文件的含义
 
 ---
 
