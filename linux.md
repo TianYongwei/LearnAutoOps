@@ -87,11 +87,11 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub user@server
 
 #### 会话session概念和.bash_xx文件的含义
 
+---
+
 新建会话默认执行 ~/.bash_profile，这时候涉及到 Bash 的初始化流程，交互模式和非交互模式下的初始化流程是不一样的，这部分待深究。
 
 > Linux 系统的一种 Shell 程序，其他常见的还有zsh等
-
----
 
 .bash_profile 脚本 1. 初始化了一些变量比如 JAVA_HOME，2. 执行了一些命令 3. 执行了一下脚本 这三点也是任何脚本都能做到的事情。究其本质为什么会执行 .bash_profile 脚本，恐怕是Bash shell 这个软件本身的默认设置吧。
 
