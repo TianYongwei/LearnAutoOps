@@ -12,12 +12,9 @@
 
 #### shell 编程
 
-- [ ] [白话 Bash shell 的几个常见关键字 `echo` `export` ]()
-- [ ] [Bash shell 初始化流程]()
-- [ ] [会话session概念和.bash_xx文件的含义]()
+- [白话 Bash shell 的几个常见关键字 `echo` `export` ]()
+- [ ] [Bash shell 初始化流程和.bash_xx文件的含义]()
 - [ ] [执行shell脚本的三种方式]()
-- [ ] [echo使用]()
-- [ ] [xargs]()
 
 #### 杂项
 
@@ -30,6 +27,7 @@
 - [ ] [rsync——同步文件]()
 - [scp——远程拷贝]()
 - [ ] [字符串工具 awk]()
+- [ ] [xargs]()
 - [ ] [正则表达式]()
 
 ## 自动化运维

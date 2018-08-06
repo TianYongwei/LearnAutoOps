@@ -1,5 +1,16 @@
 # Linux 基础知识
+<!-- TOC -->
 
+- [Linux 基础知识](#linux-基础知识)
+        - [nohup使用——输出到指定文件](#nohup使用输出到指定文件)
+        - [alias别名——将长命令换成短命令使用](#alias别名将长命令换成短命令使用)
+        - [按照名字匹配线程名称并杀死](#按照名字匹配线程名称并杀死)
+        - [scp 远程拷贝(配合免密登录更方便)](#scp-远程拷贝配合免密登录更方便)
+        - [免密登录](#免密登录)
+        - [会话session概念和.bash_xx文件的含义](#会话session概念和bash_xx文件的含义)
+        - [Bash shell 的几个关键字](#bash-shell-的几个关键字)
+
+<!-- /TOC -->
 ### nohup使用——输出到指定文件
 
 ``` shell
@@ -95,7 +106,7 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub user@server
 
 以下是我 MacOS 的 ~/.bash_profile 文件
 
-``` shell
+```
 # mysql
 export PATH=/usr/local/mysql/bin:$PATH
 
