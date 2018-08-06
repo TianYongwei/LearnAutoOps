@@ -12,6 +12,8 @@
 
 #### shell 编程
 
+- [ ] [白话 Bash shell 的几个常见关键字 `echo` `export` ]()
+- [ ] [Bash shell 初始化流程]()
 - [ ] [会话session概念和.bash_xx文件的含义]()
 - [ ] [执行shell脚本的三种方式]()
 - [ ] [echo使用]()

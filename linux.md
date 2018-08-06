@@ -85,3 +85,53 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub user@server
 ```
 
 > 执行需要目标服务器的用户名和密码,因为是首次
+
+#### 会话session概念和.bash_xx文件的含义
+
+新建会话默认执行 ~/.bash_profile，这时候涉及到 Bash 的初始化流程，交互模式和非交互模式下的初始化流程是不一样的，这部分待深究。
+
+> Linux 系统的一种 Shell 程序，其他常见的还有zsh等
+
+.bash_profile 脚本 1. 初始化了一些变量比如 JAVA_HOME，2. 执行了一些命令 3. 执行了一下脚本 这三点也是任何脚本都能做到的事情。究其本质为什么会执行 .bash_profile 脚本，恐怕是Bash shell 这个软件本身的默认设置吧。
+
+以下是我 MacOS 的 ~/.bash_profile 文件
+
+``` bash
+# mysql
+export PATH=/usr/local/mysql/bin:$PATH
+
+# maven
+export M2_HOME=/Users/tianyongwei/dev/java/apache-maven-3.5.2
+export PATH=$PATH:$M2_HOME/bin
+
+# java
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/
+export PATH=$PATH:$JAVA_HOME/bin
+
+# export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
+
+# 执行别名设定 ~/.bash_alias
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+```
+
+#### Bash shell 的几个关键字
+
+常用搭配，echo > 往文件中写字符
+
+```
+echo '你好，世界!' > ./helloworld.txt 
+```
+
+export 能临时定义变量
+
+> 之所以每次打开shell都能执行Java ,是因为每次豆浆 Java 的执行路径放到了 path 这个全局变量中了
+
+``` shell
+export PATH=$PATH:$JAVA_HOME/bin
+```
+
+> 取全局变量用 `$`
+
+
