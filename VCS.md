@@ -26,7 +26,7 @@ git config -global XXX
 
 ### SVN
 
-> [参考:svn-book](http://svnbook.red-bean.com/en/1.7/index.html)
+[参考:svn-book](http://svnbook.red-bean.com/en/1.7/index.html)
 
 1. 查看当前目录下的所有 ignore 文件, -R 表示递归。
 
