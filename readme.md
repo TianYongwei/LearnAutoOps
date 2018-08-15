@@ -39,3 +39,7 @@
 
 - [ ] [Jenkins]()
 
+## 参考
+
+[ruanyf:https://github.com/ruanyf/simple-bash-scripts](https://github.com/ruanyf/simple-bash-scripts)
+
