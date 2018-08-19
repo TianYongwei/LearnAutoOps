@@ -39,7 +39,10 @@
 
 - [ ] [Jenkins]()
 
-## 参考
+## 参考网页
 
-[ruanyf:https://github.com/ruanyf/simple-bash-scripts](https://github.com/ruanyf/simple-bash-scripts)
+- [ruanyf:https://github.com/ruanyf/simple-bash-scripts](https://github.com/ruanyf/simple-bash-scripts)
 
+## 推荐书籍
+
+- [操作系统之哲学原理(第2版) (豆瓣)](https://book.douban.com/subject/10528447/)
