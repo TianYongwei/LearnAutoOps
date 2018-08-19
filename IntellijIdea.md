@@ -4,7 +4,7 @@
 
 ### 常用快捷键
 
-> [官方会计案件cheatsheet](https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf)
+> [官方快捷键cheatsheet](https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf)
 
 - 查看使用位置
 - 查看声明位置
