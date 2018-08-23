@@ -46,3 +46,15 @@ svn propset svn:ignore 'target' ./
 3. commit log
 
 4. 回滚
+
+
+### svn 疑难杂症
+
+```
+[root@web120 bangdan-node]# svn up
+正在升级 '.':
+svn: E170013: Unable to connect to a repository at URL 'https://120.27.99.222/svn/pubsafe/bangdan/bangdan-node'
+svn: E175013: 禁止访问 '/svn/pubsafe/bangdan/bangdan-node'
+```
+
+方案：删除~/.subversion/auth 目录，清楚登录信息，重新登录
